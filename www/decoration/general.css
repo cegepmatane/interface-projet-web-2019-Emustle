@@ -1,0 +1,89 @@
+*
+body{
+	background-color: #333333;
+	color: white;
+}
+
+header{
+	width: 100%;
+	padding: 1% 0 10% 0;
+	background-image: url("./universe.jpg");
+}
+
+h1{
+	text-align: center;
+	background-color: #0D0040;
+	color: white;
+	font-family: "Ailerons-Regular";
+	font-size: 28pt;
+
+	margin: auto;
+	padding: 10px;
+}
+
+nav{
+	display: block;
+	text-align: center;
+	align-items: center;
+
+	margin-top: 2%;
+}
+
+nav ul {
+	padding: 2%;
+	margin: 0;
+
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	background-color: #0D0040;
+	text-decoration: none;
+	font-family: "Apple Chancery";
+	color: white;
+	padding: 5px;
+}
+
+nav ul li ul {
+	display: none;
+	border: white solid 2px;
+	/*border-radius: 5px;*/
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav li:hover ul li {
+	float: none;
+}
+
+nav li ul {
+	position: absolute;
+}
+
+li a:hover {
+	color: yellow;
+}
+
+
+@font-face {
+  font-family: 'Ailerons-Regular';
+  src: url('./Ailerons-Regular.otf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Apple Chancery';
+ 	src: url('./Apple Chancery.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Cinzel';
+ 	src: url('./Cinzel-Regular.otf') format('truetype');
+}

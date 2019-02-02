@@ -1,0 +1,21 @@
+@import url("./general.css");
+
+#bouton{
+	border-radius: 5px;
+}
+
+form{
+	float: none;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+}
+
+legend{
+	font-family: "Verdana";
+	font-weight: bold;
+}
+
+label{
+	display: block;
+}

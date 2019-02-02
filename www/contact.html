@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Espacium - Contact</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./decoration/contact.css">
+</head>
+<body>
+	<header>
+		<h1>Espacium : Une vision de l'infiniment grand</h1>
+
+		<nav>
+			<ul>
+				<li><a href="./index.html">Accueil</a></li>
+				<li><a href="./articles.html">Nouvelles</a>
+					<ul>
+						<li><a href="./objets-celestes.html">Les objets célestes</a></li>
+						<li><a href="./trou-noir.html">Les trous noirs</a></li>
+						<li><a href="./univers-expansion.html">Un univers en expansion</a></li>
+					</ul>
+				</li>
+				<li><a href="./mission.html">Mission</a></li>
+				<li><a href="./membres.html">Membres</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</header>
+	<br><br>
+	<form>
+		<fieldset>
+			<legend>Pour nous contacter</legend>
+
+			<label>Choisissez le sujet du message : </label>
+			<select required>
+				<option value="">[Veuillez selectionner un sujet]</option>
+				<option value="erronnees">Informations erronnées</option>
+				<option value="ajout">Ajout d'informations</option>
+				<option value="collaboration">Collaboration</option>
+				<option value="conseils">Conseils</option>
+				<option value="autre">Autre</option>
+			</select>
+
+			<label for="nom">Nom : </label>
+			<input type="text" name="nom" placeholder="ex: Dupont" required>
+			<br><br>
+			<label for="prenom">Prénom : </label>
+			<input type="text" name="prenom" placeholder="ex: Jean" required>
+			<br><br>
+			<label for="courriel">Adresse courriel : </label>
+			<input type="email" name="courriel" placeholder="ex: jean.dupont@domaine.fr" required>
+			<br><br>
+			<p>Êtes-vous un scientifique en quête de gloire ?</p>
+			<div>
+				<input type="radio" name="scientifique" value="Oui">
+				<label for="scientifique">Oui</label>
+				<input type="radio" name="scientifique" required>
+				<label for="scientifique">Non</label>
+			</div>
+			<br>
+			<label for="message">Message : </label>
+			<input type="textarea" name="message" placeholder="ex: Je désirerais vous faire part..." required>
+			<br><br>
+
+			<input id="bouton" type="submit" value="Envoyer">
+		</fieldset>
+	</form>
+</body>
+</html>
