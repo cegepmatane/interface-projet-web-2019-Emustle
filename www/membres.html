@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
 	<title>Espacium - Membres</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./decoration/membres.css">
+	<script type="text/javascript">
+
+		var texteParDefaut = "email@cgmatane.qc.ca";
+
+		function definirPseudoParDefaut() 
+		{
+			document.getElementById("pseudo").value = texteParDefaut;
+		}
+
+		function effacerPseudoParDefaut()
+		{
+			if (document.getElementById("pseudo").value == texteParDefaut) 
+			{
+				document.getElementById("pseudo").value = "";
+			}
+		}
+
+		function quitterChampPseudo()
+		{
+			if (document.getElementById("pseudo").value == "") 
+			{
+				document.getElementById("pseudo").value = texteParDefaut;
+			}
+		}
+
+	</script>
 </head>
-<body>
+<body onload="definirPseudoParDefaut()">
 	<header>
 		<h1>Espacium : Une vision de l'infiniment grand</h1>
 
@@ -25,14 +51,14 @@
 			</ul>
 		</nav>
 	</header>
-	<form>
+	<form name="formulaire-inscription" method="post">
 		<fieldset>
 			<legend>Connexion</legend>
-			<label for="identifiant">Identifiant : </label>
-			<input type="text" name="identifiant" placeholder="ex: Louise123" required>
+			<label for="pseudo">Pseudonyme : </label>
+			<input type="text" name="pseudo" id="pseudo" onclick="effacerPseudoParDefaut()" onblur="quitterChampPseudo()">
 			<br><br>
 			<label for="mdp">Mot de passe : </label>
-			<input type="password" name="mdp" required>
+			<input type="password" name="mdp" id="motdepasse">
 			<br><br>
 
 			<input id="bouton" type="submit" value="Envoyer">
