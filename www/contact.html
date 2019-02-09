@@ -4,6 +4,39 @@
 	<title>Espacium - Contact</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./decoration/contact.css">
+	<script type="text/javascript">
+
+		var erreurCourriel = false;
+
+		
+		function verifierEmail()
+		{
+			if (!(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(document.getElementById("adresse-email").value)))
+			{
+				var divCourriel = document.getElementById("courriel");
+				erreurCourriel = true;
+			}
+			else
+			{
+				//alert("faux");
+				divCourriel.removeAttribute("style");
+				document.getElementById("erreur-courriel").removeAttribute("innerText");
+				erreurCourriel = false;
+			}
+
+			if (erreurCourriel == true)
+			{	
+				//alert("ça va dans le erreur");
+				divCourriel.style.border = "thin solid #FF0000";
+				document.getElementById("adresse-email").style.border = "thin solid #FF0000";
+				document.getElementById("erreur-courriel").innerText = "Format de courriel invalide";
+				document.getElementById("erreur-courriel").style.color = "#FF0000";
+
+				return false;
+			}
+		}
+
+	</script>
 </head>
 <body>
 	<header>
@@ -38,29 +71,33 @@
 				<option value="conseils">Conseils</option>
 				<option value="autre">Autre</option>
 			</select>
-
+			<br><br>
 			<label for="nom">Nom : </label>
 			<input type="text" name="nom" placeholder="ex: Dupont" required>
 			<br><br>
 			<label for="prenom">Prénom : </label>
 			<input type="text" name="prenom" placeholder="ex: Jean" required>
 			<br><br>
-			<label for="courriel">Adresse courriel : </label>
-			<input type="email" name="courriel" placeholder="ex: jean.dupont@domaine.fr" required>
+			<div id="courriel">
+				<label for="courriel">Adresse courriel : </label>
+				<input type="text" name="courriel" placeholder="ex: jean.dupont@domaine.fr" id="adresse-email" required>
+				<br>
+				<span id="erreur-courriel"></span>
+			</div>
 			<br><br>
 			<p>Êtes-vous un scientifique en quête de gloire ?</p>
 			<div>
-				<input type="radio" name="scientifique" value="Oui">
+				<input class="bouton-radio" type="radio" name="scientifique" value="Oui">
 				<label for="scientifique">Oui</label>
-				<input type="radio" name="scientifique" required>
+				<input class="bouton-radio" type="radio" name="scientifique" required>
 				<label for="scientifique">Non</label>
 			</div>
 			<br>
 			<label for="message">Message : </label>
-			<input type="textarea" name="message" placeholder="ex: Je désirerais vous faire part..." required>
+			<textarea rows="5" cols="30" id="message" placeholder="ex: Je souhaiterais vous faire part..." required></textarea>
 			<br><br>
 
-			<input id="bouton" type="submit" value="Envoyer">
+			<input id="bouton" type="submit" value="Envoyer" onclick="return verifierEmail()">
 		</fieldset>
 	</form>
 </body>
