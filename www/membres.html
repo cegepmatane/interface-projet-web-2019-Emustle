@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<title>Espacium - Membres</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./decoration/membres.css">
-	<script type="text/javascript">
+	<script>
 
 		var texteParDefaut = "email@cgmatane.qc.ca";
 
@@ -15,7 +15,7 @@
 
 		function effacerPseudoParDefaut()
 		{
-			if (document.getElementById("pseudo").value == texteParDefaut) 
+			if (document.getElementById("pseudo").value == texteParDefaut)
 			{
 				document.getElementById("pseudo").value = "";
 			}
@@ -57,7 +57,7 @@
 			<label for="pseudo">Pseudonyme : </label>
 			<input type="text" name="pseudo" id="pseudo" onclick="effacerPseudoParDefaut()" onblur="quitterChampPseudo()">
 			<br><br>
-			<label for="mdp">Mot de passe : </label>
+			<label for="motdepasse">Mot de passe : </label>
 			<input type="password" name="mdp" id="motdepasse">
 			<br><br>
 

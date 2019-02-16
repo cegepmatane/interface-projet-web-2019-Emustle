@@ -1,1 +1,19 @@
 @import url("./general.css");
+
+#message-bienvenue	{
+	margin: 2%;
+	text-align: center;
+	border: thin solid white;
+	border-radius: 5px;
+	background-image: linear-gradient(to bottom, black, #0D0040);
+}
+
+#resume{
+	border: thin solid transparent;
+	border-radius: 5px;
+	background-color: #0B4A7F;
+
+	padding: 5%;
+	text-align: center;
+	align-content: left;
+}

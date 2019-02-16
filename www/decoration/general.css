@@ -30,7 +30,7 @@ nav{
 }
 
 nav ul {
-	padding: 2%;
+	padding: 0;
 	margin: 0;
 
 	list-style-type: none;
@@ -81,9 +81,4 @@ li a:hover {
 @font-face{
 	font-family: 'Apple Chancery';
  	src: url('./Apple Chancery.ttf') format('truetype');
-}
-
-@font-face{
-	font-family: 'Cinzel';
- 	src: url('./Cinzel-Regular.otf') format('truetype');
 }
