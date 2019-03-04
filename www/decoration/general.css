@@ -6,13 +6,20 @@
 
 body{
 	background-color: #333333;
+	font-family: "GeosansLight";
 	color: white;
 }
 
 header{
 	width: 100%;
-	padding: 1% 0 10% 0;
+
+	padding: 1% 0 0% 0;
 	background-image: url("./universe.jpg");
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-size: cover;
 }
 
 h1{
@@ -21,36 +28,35 @@ h1{
 	color: white;
 	font-family: "Ailerons-Regular";
 	font-size: 28pt;
+	font-style: italic;
 
-	margin: auto;
-	padding: 10px;
+	padding: 1%;
 }
 
 nav{
-	display: block;
 	text-align: center;
 	align-items: center;
 
-	margin-top: 2%;
+	margin-top: 10%;
 }
 
 nav ul {
-	padding: 0;
-	margin: 0;
-
 	list-style-type: none;
-	text-align: center;
+	background-color: #0D0040;
 }
 
-nav li {
-	float: left;
+nav ul li {
+	float: center;
+	display: inline-block;
+	margin-left: 4%;
+	margin-right: 4%;
 }
 
 nav li a {
 	display: block;
 	background-color: #0D0040;
 	text-decoration: none;
-	font-family: "Apple Chancery";
+	font-size: 14pt;
 	color: white;
 	padding: 5px;
 }
@@ -58,7 +64,6 @@ nav li a {
 nav ul li ul {
 	display: none;
 	border: white solid 2px;
-	/*border-radius: 5px;*/
 }
 
 nav ul li:hover ul {
@@ -66,7 +71,7 @@ nav ul li:hover ul {
 }
 
 nav li:hover ul li {
-	float: none;
+	float: center;
 }
 
 nav li ul {
@@ -84,6 +89,6 @@ li a:hover {
 }
 
 @font-face{
-	font-family: 'Apple Chancery';
- 	src: url('./Apple Chancery.ttf') format('truetype');
+	font-family: 'GeosansLight';
+ 	src: url('./GeosansLight.ttf') format('truetype');
 }
