@@ -4,8 +4,43 @@
 	<title>Espacium - Objets célestes</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./decoration/objets-celestes.css">
+	<script type="text/javascript">
+
+		function remplacerLienParImage()
+		{
+			var lienFacebook = new Image();
+			var lienTwitter = new Image();
+			var lienInstagram = new Image();
+
+			lienFacebook.src = './decoration/facebook.png';
+			lienTwitter.src = './decoration/twitter.jpg';
+			lienInstagram.src = './decoration/instagram.png';
+
+			lienFacebook.onclick = function()
+			{
+	    		window.location.href = 'https://www.facebook.com/';
+			};
+			lienTwitter.onclick = function()
+			{
+	    		window.location.href = 'https://www.twitter.com/';
+			};
+			lienInstagram.onclick = function()
+			{
+	    		window.location.href = 'https://www.instagram.com/';
+			};
+
+			lienFacebook.style.size = '45px';
+			lienTwitter.style.size = '45px';
+			lienInstagram.style.size = '45px';
+
+			document.getElementById("lien-facebook").appendChild(lienFacebook);
+			document.getElementById("lien-twitter").appendChild(lienTwitter);
+			document.getElementById("lien-instagram").appendChild(lienInstagram);
+		}
+
+	</script>
 </head>
-<body>
+<body onload="remplacerLienParImage()">
 	<header>
 		<h1>Espacium : Une vision de l'infiniment grand</h1>
 
@@ -83,13 +118,16 @@
 		<div>
 			<div id="mentions-legales">
 				<p>Mentions légales </p>
+				<p>Développeur : Hy-Vong G.D.R.</p>
 			</div>
 		
 			<div id="liens-sociaux">
+
+				<p>Pour nous suivre sur les réseaux :</p>
 				<li>
-					<a href="https://www.facebook.com">Facebook</a>
-					<a href="https://www.twitter.com">Twitter</a>
-					<a href="https://www.instagram.com">Instagram</a>
+					<a id="lien-facebook" href="https://www.facebook.com"></a>
+					<a id="lien-twitter" href="https://www.twitter.com"></a>
+					<a id="lien-instagram" href="https://www.instagram.com"></a>
 				</li>
 			</div>
 		</div>
