@@ -4,7 +4,6 @@
 {
 	padding: 2% 15% 5% 15%;
 	font-size: 14pt;
-	position: relative;
 }
 
 #images
@@ -32,7 +31,6 @@ img
 	margin: 1%;
 	width: 31%;
 	height: 200px;
-	position: inherit;
 }
 
 span

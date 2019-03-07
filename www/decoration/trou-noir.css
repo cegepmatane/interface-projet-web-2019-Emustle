@@ -1,1 +1,39 @@
 @import url("./general.css");
+
+#contenu-page
+{
+	padding: 2% 15% 5% 15%;
+	font-size: 14pt;
+}
+
+#images
+{
+	width: 100%;
+}
+
+#titre-page
+{
+	margin: 1%;
+}
+
+.categorie
+{
+	margin-top: 2%;
+}
+
+.sous-categorie, .categorie p
+{
+	margin: 2%;
+}
+
+img
+{
+	margin: 1%;
+	width: 31%;
+	height: 200px;
+}
+
+span
+{
+	color: yellow;
+}

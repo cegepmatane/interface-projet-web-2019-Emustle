@@ -1,1 +1,7 @@
 @import url("./general.css");
+
+#contenu-page
+{
+	padding: 2% 5% 5% 5%;
+	border: white solid 1px;
+}
