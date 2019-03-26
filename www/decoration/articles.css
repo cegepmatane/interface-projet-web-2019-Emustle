@@ -2,6 +2,82 @@
 
 #contenu-page
 {
-	padding: 2% 5% 5% 5%;
-	border: white solid 1px;
+	width: 100%;
+	padding: 1% 5% 5% 5%;
+	box-sizing: border-box;
+}
+
+.article
+{
+	width: 100%;
+	height: 275px;
+	background-color: #444444;
+	padding: 1%;
+	margin-top: 2%;
+}
+
+.article:hover
+{
+	box-shadow: 1px 1px grey;
+	border-radius: 5px;
+}
+
+.article img
+{
+	width: 35%;
+	float: left;
+
+}
+
+.article .desc-article
+{
+	margin: 1%;
+	float: right;
+	width: 60%;
+}
+
+.article-miroir
+{
+	width: 100%;
+	height: 300px;
+	background-color: #444444;
+	padding: 1%;
+	margin-top: 2%;
+}
+.article-miroir:hover
+{
+	box-shadow: 1px 1px grey;
+	border-radius: 5px;
+}
+
+.article-miroir img
+{
+	width: 40%;
+	float: right;
+
+}
+
+.article-miroir .desc-article
+{
+	margin: 1%;
+	float: left;
+	width: 50%;
+}
+
+a{
+	text-decoration: underline;
+	color: white;
+}
+
+h2{
+	font-family: Ailerons;
+    margin: 1%;
+}
+
+.lien-article{
+	margin-top: 10%;
+}
+
+a:hover{
+	color: yellow;
 }

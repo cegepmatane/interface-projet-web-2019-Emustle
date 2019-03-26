@@ -84,10 +84,11 @@ li a:hover {
 
 footer
 {
+	position: relative;
 	background-color: #444444;
 	bottom: 0;
 	width: 100%;
-	min-height: 150px;
+	height: 150px;
 }
 
 #mentions-legales
@@ -100,6 +101,7 @@ footer
 #liens-sociaux
 {
 	width: 30%;
+	margin: auto;
 	float: right;
 	padding: 1%;
 }
@@ -111,9 +113,7 @@ footer
 
 #liens-sociaux li a img
 {
-	width: 50px;
-	height: 50px;
-	border: 0;
+	width: 20%
 }
 
 @font-face {
