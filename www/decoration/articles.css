@@ -1,8 +1,6 @@
 @import url("./general.css");
 
-#decompte{
-    font-size: 25px;
-}
+
 
 #contenu-page
 {
@@ -12,6 +10,9 @@
 	box-sizing: border-box;
 }
 
+#decompte{
+    font-size: 25px;
+}
 .article
 {
 	width: 100%;
