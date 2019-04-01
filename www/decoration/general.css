@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav ul li {
-	float: center;
+	/*float: center;*/
 	display: inline-block;
 	margin-left: 4%;
 	margin-right: 4%;
@@ -73,7 +73,7 @@ nav ul li:hover ul {
 }
 
 nav li:hover ul li {
-	float: center;
+	/*float: center;*/
 }
 
 nav li ul {

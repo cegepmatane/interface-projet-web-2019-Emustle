@@ -99,7 +99,7 @@
     color: white;
 }
 
-#lien-articles:a{
+#lien-articles:hover{
     color: yellow;
 }
 
