@@ -21,10 +21,6 @@ function remplacerLienParImage()
  		window.location.href = 'https://www.instagram.com/';
 	};
 
-	lienFacebook.style.size = '45px';
-	lienTwitter.style.size = '45px';
-	lienInstagram.style.size = '45px';
-
 	document.getElementById("lien-facebook").appendChild(lienFacebook);
 	document.getElementById("lien-twitter").appendChild(lienTwitter);
 	document.getElementById("lien-instagram").appendChild(lienInstagram);
