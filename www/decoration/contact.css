@@ -23,3 +23,16 @@ label{
 	margin-left: 20%;
 	margin-right: 20%;
 }
+
+table{
+    width: 70%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5% auto; 
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
