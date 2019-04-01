@@ -5,8 +5,17 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./decoration/articles.css">
 	<script type="text/javascript" src="footer.js"></script>
+    <script type="text/javascript">
+        function decompteArticles()
+        {
+            var decompte = document.getElementById("decompte");
+            var nbArticles = document.getElementsByClassName("article").length + document.getElementsByClassName("article-miroir").length;
+            
+            decompte.innerHTML += "Nom d'articles : " + nbArticles;
+        }
+    </script>
 </head>
-<body onload="remplacerLienParImage()">
+<body onload="remplacerLienParImage(); decompteArticles();">
 	<header>
 		<h1>Espacium : Une vision de l'infiniment grand</h1>
 
@@ -27,6 +36,8 @@
 		</nav>
 	</header>
 	<div id="contenu-page">
+    <div id="decompte">
+    </div>
 		<div class="article">
 			<img src="./decoration/galaxie.jpg">
 			<div class="desc-article">
@@ -69,7 +80,7 @@
 	<footer>
 		<div>
 			<div id="mentions-legales">
-				<p>Mentions légales </p>
+				<p>Mentions légales</p>
 				<p>Développeur : Hy-Vong G.D.R.</p>
 			</div>
 			<div id="liens-sociaux">
