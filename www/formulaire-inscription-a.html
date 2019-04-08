@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Espacium - Formulaire d'inscription</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./decoration/membres.css">
+	<script src="footer.js"></script>
+    <script>
+        
+        var erreur = false;
+        
+        function comparerMdp()
+        {
+            var mdp = document.getElementById('mdp');
+            var confirmation = document.getElementById('confirmation-mdp');
+            
+            if(mdp.value != confirmation.value)
+            {
+                alert("Les mots de passe sont différents. Veuillez les changer afin qu'ils correspondent.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body onload="remplacerLienParImage();">
+	<header>
+		<h1>Espacium : Une vision de l'infiniment grand</h1>
+
+		<nav>
+			<ul>
+				<li><a href="./index.html">Accueil</a></li>
+				<li><a href="./articles.html">Nouvelles</a>
+					<ul>
+						<li><a href="./objets-celestes.html">Les objets célestes</a></li>
+						<li><a href="./trou-noir.html">Les trous noirs</a></li>
+						<li><a href="./univers-expansion.html">Un univers en expansion</a></li>
+					</ul>
+				</li>
+				<li><a href="./mission.html">Mission</a></li>
+				<li><a href="./membres.html">Membres</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <form name="formulaire-inscription" method="post" action="formulaire-inscription-b.html">
+        <fieldset>
+			<legend>Inscription - PARTIE A</legend>
+            <ul>
+                <h2>Choix identifiants</h2>
+                <li>
+                    <label for="email">Entrez votre adresse e-mail : </label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="pseudo">Choisissez un pseudonyme : </label>
+                    <input type="text" name="pseudo" id="pseudo" required>
+                </li>
+                <li>
+                    <label for="mdp">Choisissez un mot de passe (et gardez le secret !) : </label>
+                    <input type="password" name="mdp" id="mdp" required>             
+                </li>
+                <li>
+                    <label for="confirmation-mdp">Confirmez le mot de passe : </label>
+                    <input type="password" name="confirmation-mdp" id="confirmation-mdp" required>
+                </li>
+                <hr>
+                <li>
+			         <input id="bouton" type="submit" value="Envoyer" onclick="return comparerMdp()">
+                </li>
+            </ul>
+		</fieldset>
+    </form>
+	<footer>
+		<div>
+			<div id="mentions-legales">
+				<p>Mentions légales </p>
+				<p>Développeur : Hy-Vong G.D.R.</p>
+			</div>
+			<ul id="liens-sociaux">
+				<li>Pour nous suivre sur les réseaux :</li>
+				<li>
+					<a id="lien-facebook" href="https://www.facebook.com"></a>
+					<a id="lien-twitter" href="https://www.twitter.com"></a>
+					<a id="lien-instagram" href="https://www.instagram.com"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

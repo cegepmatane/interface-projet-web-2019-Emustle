@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Espacium - Formulaire d'inscription</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./decoration/membres.css">
+	<script src="footer.js"></script>
+</head>
+<body onload="remplacerLienParImage();">
+	<header>
+		<h1>Espacium : Une vision de l'infiniment grand</h1>
+
+		<nav>
+			<ul>
+				<li><a href="./index.html">Accueil</a></li>
+				<li><a href="./articles.html">Nouvelles</a>
+					<ul>
+						<li><a href="./objets-celestes.html">Les objets célestes</a></li>
+						<li><a href="./trou-noir.html">Les trous noirs</a></li>
+						<li><a href="./univers-expansion.html">Un univers en expansion</a></li>
+					</ul>
+				</li>
+				<li><a href="./mission.html">Mission</a></li>
+				<li><a href="./membres.html">Membres</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <form name="formulaire-inscription" method="post" action="formulaire-inscription-c.html">
+        <fieldset>
+			<legend>Inscription - PARTIE B</legend>
+            <ul>
+                <h2>Renseignements personnels</h2>
+                <li>
+                    <label for="nom">Renseignez votre nom : </label>
+                    <input type="text" name="nom" id="nom" required>
+                </li>
+                <li>
+                    <label for="prenom">Renseignez votre prénom : </label>
+                    <input type="text" name="prenom" id="prenom" required>
+                </li>
+                <li>
+                    <p>Sexe :</p>
+                    <label for="sexe">Homme</label>
+                    <input class="bouton-radio" type="radio" name="sexe" id="masculin">
+                    <label for="sexe">Femme</label>
+                    <input class="bouton-radio" type="radio" name="sexe" id="feminin">
+                    <label for="sexe">Autre</label>
+                    <input class="bouton-radio" type="radio" name="sexe" id="autre" checked>
+                </li>
+                <hr>
+                <h2> Adresse </h2>
+                <li>
+                    <label for="num-adresse">Numéro de voie : </label>
+                    <input type="number" name="num-adresse" id="num-adresse" required>             
+                </li>
+                <li>
+                    <label for="voie-adresse">Nom de la voie : </label>
+                    <input type="text" name="voie-adresse" id="voie-adresse" required>             
+                </li>
+                <li>
+                    <label for="ville-adresse">Ville : </label>
+                    <input type="text" name="ville-adresse" id="ville-adresse" required>             
+                </li>
+                <li>
+                    <label for="code-adresse">Code postal : </label>
+                    <input type="text" name="code-adresse" id="code-adresse" required>             
+                </li>
+                <hr>
+                <li>
+                    <input id="bouton" type="submit" value="Envoyer" onclick="return comparerMdp()">
+                </li>
+            </ul>
+		</fieldset>
+    </form>
+	<footer>
+		<div>
+			<div id="mentions-legales">
+				<p>Mentions légales </p>
+				<p>Développeur : Hy-Vong G.D.R.</p>
+			</div>
+			<ul id="liens-sociaux">
+				<li>Pour nous suivre sur les réseaux :</li>
+				<li>
+					<a id="lien-facebook" href="https://www.facebook.com"></a>
+					<a id="lien-twitter" href="https://www.twitter.com"></a>
+					<a id="lien-instagram" href="https://www.instagram.com"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

@@ -11,28 +11,28 @@
 
 		function definirPseudoParDefaut() 
 		{
-			document.getElementById("pseudo").value = texteParDefaut;
+			document.getElementById("email").value = texteParDefaut;
 		}
 
 		function effacerPseudoParDefaut()
 		{
-			if (document.getElementById("pseudo").value == texteParDefaut)
+			if (document.getElementById("email").value == texteParDefaut)
 			{
-				document.getElementById("pseudo").value = "";
+				document.getElementById("email").value = "";
 			}
 		}
 
 		function quitterChampPseudo()
 		{
-			if (document.getElementById("pseudo").value == "") 
+			if (document.getElementById("email").value == "") 
 			{
-				document.getElementById("pseudo").value = texteParDefaut;
+				document.getElementById("email").value = texteParDefaut;
 			}
 		}
 
 	</script>
 </head>
-<body onload="definirPseudoParDefaut(); remplacerLienParImage();">
+<body onload="remplacerLienParImage(); definirPseudoParDefaut();">
 	<header>
 		<h1>Espacium : Une vision de l'infiniment grand</h1>
 
@@ -52,19 +52,29 @@
 			</ul>
 		</nav>
 	</header>
-	<form name="formulaire-inscription" method="post">
+	<form name="formulaire-connexion" method="post">
 		<fieldset>
-			<legend>Connexion</legend>
-			<label for="pseudo">Pseudonyme : </label>
-			<input type="text" name="pseudo" id="pseudo" onclick="effacerPseudoParDefaut()" onblur="quitterChampPseudo()">
-			<br><br>
-			<label for="motdepasse">Mot de passe : </label>
-			<input type="password" name="mdp" id="motdepasse">
-			<br><br>
-
-			<input id="bouton" type="submit" value="Envoyer">
+        <ul>
+            <li>
+                <label for="email">Adresse e-mail : </label>
+                <input type="email" name="email" id="email">
+            </li>
+            <li>
+                <label for="mdp">Mot de passe : </label>
+                <input type="password" name="mdp" id="mdp">             
+            </li>
+            <li>
+                <input id="bouton" type="submit" value="Envoyer">
+            </li>
+        </ul>
 		</fieldset>
 	</form>
+    <div id="inscription">
+        <p>Pas encore de compte ?</p>
+        <div id="lien-inscription">
+            <a href="formulaire-inscription-a.html">S'inscrire</a>
+        </div>
+    </div>
 	<footer>
 		<div>
 			<div id="mentions-legales">

@@ -1,8 +1,7 @@
 @import url("./general.css");
 
-
-#bouton{
-	border-radius: 5px;
+fieldset{
+    padding: 2%;
 }
 
 form{
@@ -16,6 +15,39 @@ legend{
 	font-weight: bold;
 }
 
+fieldset ul li{
+    margin: 1% auto;
+    list-style-type: none;
+}
+
 label{
 	display: block;
+}
+
+#inscription{   
+    width: 50%;
+    margin: 2% auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#inscription p{
+    width: 100%;
+    margin: 1%;
+}
+
+#lien-inscription{
+    width: 50%;
+    padding: 2% 0;
+    margin: auto;
+    background-color: #555555;
+}
+
+#lien-inscription a{
+    color: white;
+}
+
+#lien-inscription a:hover{
+    color: yellow;
 }

@@ -89,10 +89,10 @@
 			<br><br>
 			<p>Êtes-vous un scientifique en quête de gloire ?</p>
 			<div>
-				<input class="bouton-radio" type="radio" id="scientifique-oui" name="scientifique-oui" value="Oui">
-				<label for="scientifique-oui">Oui</label>
-				<input class="bouton-radio" type="radio" id="scientifique-non" name="scientifique-non" required>
-				<label for="scientifique-non">Non</label>
+				<input class="bouton-radio" type="radio" id="scientifique-oui" name="scientifique" value="Oui">
+				<label for="scientifique">Oui</label>
+				<input class="bouton-radio" type="radio" id="scientifique-non" name="scientifique" required>
+				<label for="scientifique">Non</label>
 			</div>
 			<br>
 			<label for="message">Message : </label>
@@ -106,7 +106,8 @@
         <table>
             <caption style="font-size: 28px;">Tableau de disponibilité de l'administrateur</caption>
             <tr>
-                <th colspan="8">Semaine</th>
+                <th style="background-color: transparent; border: 0;"></th>
+                <th colspan="7">Semaine</th>
             </tr>
             <tr>
                 <th>Période</th>
@@ -119,7 +120,7 @@
                 <th>Dimanche</th>
             </tr>
             <tr>
-                <td>Matin</td>
+                <th>Matin</th>
                 <td>Disponible</td>
                 <td>X</td>
                 <td>Disponible</td>
@@ -129,7 +130,7 @@
                 <td>Disponible</td>
             </tr>
             <tr>
-                <td>Après-midi</td>
+                <th>Après-midi</th>
                 <td>Disponible</td>
                 <td>Disponible</td>
                 <td>X</td>

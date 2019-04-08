@@ -118,6 +118,19 @@ footer
 	width: 15%;
 }
 
+hr{
+    margin: 2% 0;
+}
+
+#bouton{
+	border-radius: 5px;
+}
+
+#bouton:hover{
+    box-shadow: 1px 1px black;
+    cursor:grab; 
+}
+
 @font-face {
   font-family: 'Ailerons-Regular';
   src: url('./Ailerons-Regular.otf') format('truetype');

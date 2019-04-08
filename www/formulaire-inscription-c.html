@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Espacium - Formulaire d'inscription</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./decoration/membres.css">
+	<script src="footer.js"></script>
+</head>
+<body onload="remplacerLienParImage();">
+	<header>
+		<h1>Espacium : Une vision de l'infiniment grand</h1>
+
+		<nav>
+			<ul>
+				<li><a href="./index.html">Accueil</a></li>
+				<li><a href="./articles.html">Nouvelles</a>
+					<ul>
+						<li><a href="./objets-celestes.html">Les objets célestes</a></li>
+						<li><a href="./trou-noir.html">Les trous noirs</a></li>
+						<li><a href="./univers-expansion.html">Un univers en expansion</a></li>
+					</ul>
+				</li>
+				<li><a href="./mission.html">Mission</a></li>
+				<li><a href="./membres.html">Membres</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <form name="formulaire-inscription" method="post" action="membres.html">
+        <fieldset>
+			<legend>Inscription - PARTIE C</legend>
+            <ul>
+                <h2>LE PLUS IMPORTANT !</h2>
+                <li>
+                    <label for="couleur">Choisissez votre couleur favorite: </label>
+                    <input type="color" name="couleur" id="couleur" required>
+                </li>
+                <li>
+                    <label for="naissance">Renseignez votre date de naissance : </label>
+                    <input type="date" name="naissance" id="naissance" required>
+                </li>
+                <hr>
+                <li>
+                    <input id="bouton" type="submit" value="Envoyer" onclick="return comparerMdp()">
+                </li>
+            </ul>
+		</fieldset>
+    </form>
+	<footer>
+		<div>
+			<div id="mentions-legales">
+				<p>Mentions légales </p>
+				<p>Développeur : Hy-Vong G.D.R.</p>
+			</div>
+			<ul id="liens-sociaux">
+				<li>Pour nous suivre sur les réseaux :</li>
+				<li>
+					<a id="lien-facebook" href="https://www.facebook.com"></a>
+					<a id="lien-twitter" href="https://www.twitter.com"></a>
+					<a id="lien-instagram" href="https://www.instagram.com"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

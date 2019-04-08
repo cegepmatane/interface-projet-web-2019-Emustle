@@ -1,7 +1,7 @@
 @import url("./general.css");
 
-#bouton{
-	border-radius: 5px;
+fieldset{
+    padding: 2%;
 }
 
 form{
@@ -33,6 +33,7 @@ table{
 }
 
 td, th {
-  border: 1px solid #dddddd;
-  padding: 8px;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    background-color: #490e5f;
 }
