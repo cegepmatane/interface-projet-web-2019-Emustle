@@ -30,7 +30,7 @@
 
 .article img
 {
-	width: 35%;
+	width: 28.5%;
 	float: left;
 
 }
@@ -68,6 +68,7 @@
 	margin: 1%;
 	float: left;
 	width: 50%;
+    
 }
 
 a{
@@ -87,3 +88,17 @@ h2{
 a:hover{
 	color: yellow;
 }
+
+.fin-desc{
+    display: none;
+}
+
+.bouton{
+    width: 10%;
+    border: 1px black solid;
+    margin:auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

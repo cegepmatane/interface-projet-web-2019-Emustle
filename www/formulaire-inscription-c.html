@@ -5,8 +5,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./decoration/membres.css">
 	<script src="footer.js"></script>
+    <script src="aide-contextuelle.js"></script>
 </head>
-<body onload="remplacerLienParImage();">
+<body onload="remplacerLienParImage(); initialiser('aide-naissance', 'label-naissance');">
 	<header>
 		<h1>Espacium : Une vision de l'infiniment grand</h1>
 
@@ -36,7 +37,8 @@
                     <input type="color" name="couleur" id="couleur" required>
                 </li>
                 <li>
-                    <label for="naissance">Renseignez votre date de naissance : </label>
+                    <div class="aide-label" id="aide-naissance"></div>
+                    <label for="naissance" id="label-naissance" title="Votre date de naissance ne nous sert qu'à vous souhaiter un joyeux anniversaire lorsque c'est votre jour de fête.">Renseignez votre date de naissance : </label>
                     <input type="date" name="naissance" id="naissance" required>
                 </li>
                 <hr>
