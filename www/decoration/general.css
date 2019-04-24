@@ -90,7 +90,7 @@ li a:hover {
 
 footer
 {
-	position: relative;
+	position: inherit;
 	background-color: #444444;
 	bottom: 0;
 	width: 100%;
