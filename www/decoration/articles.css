@@ -3,13 +3,6 @@
 @import url(./lightbox.css);
 
 
-#contenu-page
-{
-	width: 100%;
-    height: auto;
-	padding: 1% 5% 5% 5%;
-	box-sizing: border-box;
-}
 
 #decompte{
     font-size: 25px;

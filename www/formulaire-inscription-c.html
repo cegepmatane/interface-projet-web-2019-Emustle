@@ -27,27 +27,36 @@
 			</ul>
 		</nav>
 	</header>
-    <form name="formulaire-inscription" method="post" action="membres.html">
-        <fieldset>
-			<legend>Inscription - PARTIE C</legend>
-            <ul>
-                <h2>LE PLUS IMPORTANT !</h2>
-                <li>
-                    <label for="couleur">Choisissez votre couleur favorite: </label>
-                    <input type="color" name="couleur" id="couleur" required>
-                </li>
-                <li>
-                    <div class="aide-label" id="aide-naissance"></div>
-                    <label for="naissance" id="label-naissance" title="Votre date de naissance ne nous sert qu'à vous souhaiter un joyeux anniversaire lorsque c'est votre jour de fête.">Renseignez votre date de naissance : </label>
-                    <input type="date" name="naissance" id="naissance" required>
-                </li>
-                <hr>
-                <li>
-                    <input id="bouton" type="submit" value="Envoyer" onclick="return comparerMdp()">
-                </li>
-            </ul>
-		</fieldset>
-    </form>
+    <div id="contenu-page">
+        <ul>
+            <li class="fil-ariane"><a href="./index.html">Accueil</a></li>
+            <li class="fil-ariane"><a href="./membres.html">Membres</a></li>
+            <li class="fil-ariane"><a href="./formulaire-inscription-a.html">Choix identifiants</a></li>
+            <li class="fil-ariane"><a href="./formulaire-inscription-b.html">Renseignements personnels</a></li>
+            <li class="fil-ariane"><a href="./formulaire-inscription-c.html">Finalisation</a></li>
+        </ul>
+        <form name="formulaire-inscription" method="post" action="membres.html">
+            <fieldset>
+                <legend>Inscription - PARTIE C</legend>
+                <ul>
+                    <h2>LE PLUS IMPORTANT !</h2>
+                    <li>
+                        <label for="couleur">Choisissez votre couleur favorite: </label>
+                        <input type="color" name="couleur" id="couleur" required>
+                    </li>
+                    <li>
+                        <div class="aide-label" id="aide-naissance"></div>
+                        <label for="naissance" id="label-naissance" title="Votre date de naissance ne nous sert qu'à vous souhaiter un joyeux anniversaire lorsque c'est votre jour de fête.">Renseignez votre date de naissance : </label>
+                        <input type="date" name="naissance" id="naissance" required>
+                    </li>
+                    <hr>
+                    <li>
+                        <input id="bouton" type="submit" value="Envoyer" onclick="return comparerMdp()">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
 	<footer>
 		<div>
 			<div id="mentions-legales">
