@@ -1,0 +1,24 @@
+@import url(./general.css);
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.image{
+    width: 500px;
+    height: auto;
+    border: 1px white solid;
+    margin: 2% 0 2% 0;
+}
+
+@media screen and (max-width: 550px)
+{
+    .image{
+        width: 350px;
+        height: auto;
+        border: 1px white solid;
+        margin: 2% 0 2% 0;
+    }
+}
