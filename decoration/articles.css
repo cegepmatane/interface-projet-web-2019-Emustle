@@ -22,19 +22,6 @@
 	border-radius: 5px;
 }
 
-.article img
-{
-	width: 28.5%;
-	float: left;
-
-}
-
-.article .desc-article
-{
-	margin: 1%;
-	float: right;
-	width: 60%;
-}
 
 .article-miroir
 {
@@ -48,21 +35,6 @@
 {
 	box-shadow: 1px 1px grey;
 	border-radius: 5px;
-}
-
-.article-miroir img
-{
-	width: 40%;
-	float: right;
-
-}
-
-.article-miroir .desc-article
-{
-	margin: 1%;
-	float: left;
-	width: 50%;
-    
 }
 
 a{
@@ -94,4 +66,83 @@ a:hover{
     cursor: pointer;
 }
 
+@media screen and (min-width: 400px)
+{
+    .article{
+        height: 600px;
+    }
+    
+    .article-miroir{
+        height: 600px;
+    }
+    
+    .article img, .article-miroir img
+    {
+        width: 100%;
+    }
+    
+    .article .desc-article, .article-miroir .desc-article
+    {
+	   margin: auto;
+	   width: 60%;
+    }
+    
+    .bouton-balancier{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 850px)
+{
+    .article{
+        height: 450px;
+    }
+    
+    .article-miroir{
+        height: 450px;
+    }
+    
+    .article img
+    {
+        width: 35.5%;
+        float: left;
+        margin: 0;
+    }
+
+    .article .desc-article
+    {
+	   margin: 1%;
+	   float: right;
+	   width: 60%;
+    }
+    
+    .article-miroir img
+    {
+        width: 35.5%;
+        float: right;
+        margin: 0;
+    }
+    
+    .article-miroir .desc-article
+    {
+        margin: 1%;
+        float: left;
+        width: 60%;
+    }
+    
+    .bouton-balancier{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    .article{
+        height: 380px;
+    }
+    
+    .article-miroir{
+        height: 380px;
+    }
+}
 
