@@ -2,9 +2,14 @@
 <html lang="fr">
 <head>
 	<title>Espacium - Galerie</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <meta  charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./decoration/galerie.css">
 	<script src="footer.js"></script>
+    <script src="lazyload.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", yall);
+    </script>
 </head>
 <body onload="remplacerLienParImage();">
 	<header>
@@ -34,10 +39,17 @@
             <img class="image" src="decoration/milky-way.jpg" alt="Voie Lactée">
             <img class="image" src="decoration/etoile.jpg" alt="Etoile">
             <img class="image" src="decoration/galaxie.jpg" alt="Galaxie">
-            <img class="image" src="decoration/milky-way.jpg" alt="Voie Lactée">
-            <img class="image" src="decoration/etoile.jpg" alt="Etoile">
-            <img class="image" src="decoration/galaxie.jpg" alt="Galaxie">
-            <img class="image" src="decoration/milky-way.jpg" alt="Voie Lactée">
+                        
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/musk.jpg">
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/hadfield.jpg">
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/pesquet.jpg">
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/einstein.jpg">
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/armstrong.jpg">
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/parallax11.jpg">
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/parallax12.jpg"> 
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/iss.jpg">
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/cosmonaute.jpg">
+            <img class="image lazy" src="decoration/blank.gif" alt="" data-src="decoration/lancement.jpg">
         </div>
     </div>
 	<footer>
