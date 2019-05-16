@@ -27,8 +27,8 @@ header{
   	background-size: cover;
 }
 
-h1{
-
+h1 span{
+    display: none;
 }
 
 h1 a{
