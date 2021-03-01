@@ -6,11 +6,11 @@ function remplacerLienParImage()
 	var lienQuora = new Image();
 	var lienReddit = new Image();
 
-	lienFacebook.src = './decoration/facebook.png';
-	lienTwitter.src = './decoration/twitter.jpg';
-	lienInstagram.src = './decoration/instagram.png';
-	lienQuora.src = './decoration/quora.png';
-	lienReddit.src = './decoration/reddit.png';
+	lienFacebook.src = '../decoration/img/facebook.png';
+	lienTwitter.src = '../decoration/img/twitter.jpg';
+	lienInstagram.src = '../decoration/img/instagram.png';
+	lienQuora.src = '../decoration/img/quora.png';
+	lienReddit.src = '../decoration/img/reddit.png';
 
 	lienFacebook.onclick = function()
 	{

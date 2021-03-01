@@ -3,14 +3,14 @@ function compte_a_rebours()
     var compte_a_rebours = document.getElementById("compte-rebours");
 
     var date_actuelle = new Date();
-    var date_evenement = new Date("Jan 21 00:00:00 2020");
+    var date_evenement = new Date("Nov 21 00:00:00 2021");
     var total_secondes = (date_evenement - date_actuelle) / 1000;
 
     var prefixe = "Compte à rebours terminé dans ";
     if (total_secondes < 0)
     {
         prefixe = "Compte à rebours terminé il y a "; // On modifie le préfixe si la différence est négatif
-        total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
+        //total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
     }
 
     if (total_secondes > 0)

@@ -19,7 +19,7 @@ header{
 	padding: 1% 0 0% 0;
     
     /*PARALLAX*/
-	background-image: url("./universe.jpg");
+	background-image: url("../decoration/img/universe.jpg");
 
 	background-attachment: fixed;
 	background-position: center;
@@ -33,7 +33,7 @@ h1 span{
 
 h1 a{
     display:inline-block;
-	background-image:url("./titre.png");
+	background-image:url("../decoration/img/titre.png");
 	width:100%;
     height: 70px;
     background-position: center;
@@ -170,12 +170,12 @@ hr{
 
 @font-face {
   font-family: 'Ailerons-Regular';
-  src: url('./Ailerons-Regular.otf') format('truetype');
+  src: url('../decoration/font/Ailerons-Regular.otf') format('truetype');
 }
 
 @font-face{
 	font-family: 'GeosansLight';
- 	src: url('./GeosansLight.ttf') format('truetype');
+ 	src: url('../decoration/font/GeosansLight.ttf') format('truetype');
 }
 
 @media screen and (max-width: 850px) {
