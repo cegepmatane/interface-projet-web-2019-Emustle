@@ -1,3 +1,12 @@
+<?php
+
+require "configuration.php";
+require CHEMIN_BDD . "EspaciumDAO.php";
+
+$listeArticles = EspaciumDAO::listerArticles();
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -76,27 +85,22 @@
                 <div class="panneau" id="liste-articles">
                     <h3>Articles</h3>
                     <hr>
+
+                    <?php
+                    foreach ($listeArticles as $article) 
+                    {
+                    ?>
+
                     <div class="article">
-                        <h4>Les objets célestes</h4>
-                        <p style="text-align: justify">
-                            Les objets célestes sont des éléments très intéressants de l'espace
-                        </p>
-                        <a href="objets-celestes.html">En savoir plus</a>
+                        <h4><?php echo $article['nom']; ?></h4>
+                        <p style="text-align: justify"><?php echo $article['resume']; ?></p>
+                        <a href="article.php?id=<?php echo $article['id']; ?>">En savoir plus</a>
                     </div>
-                    <div class="article">
-                        <h4>Les trous noirs</h4>
-                        <p style="text-align: justify">
-                            Venz en apprendre davantage sur les trous noirs, corps fascinants et énigmatiques
-                        </p>
-                        <a href="trou-noir.html">En savoir plus</a>
-                    </div>
-                    <div class="article">
-                        <h4>Un univers en expansion</h4>
-                        <p style="text-align: justify">
-                            L'univers est en constante expansion. Même si ses limites nous sont encore inconnues, que connaissons-nous de sa structure ?
-                        </p>
-                        <a href="univers-expansion.html">En savoir plus</a>
-                    </div>
+
+                    <?php
+                    }
+                    ?>
+
                     <h4><a href="articles.html" id="lien-articles">Tous les articles</a></h4>
                 </div>
                 <div class="panneau" id="invite-contact">
