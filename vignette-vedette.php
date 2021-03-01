@@ -38,25 +38,7 @@
     </script>
 </head>
 <body onload="initialiser(0); initialiser(1); initialiser(2); initialiser(3); initialiser(4);">
-	<header>
-        <h1><a href="index.php"></a><span>Espacium : Une vision de l'infiniment grand</span></h1>
-
-		<nav>
-			<ul>
-				<li><a href="./index.php">Accueil</a></li>
-				<li><a href="./articles.php">Nouvelles</a>
-					<ul>
-						<li><a href="./objets-celestes.php">Les objets célestes</a></li>
-						<li><a href="./trou-noir.php">Les trous noirs</a></li>
-						<li><a href="./univers-expansion.php">Un univers en expansion</a></li>
-					</ul>
-				</li>
-				<li><a href="./mission.php">Mission</a></li>
-				<li><a href="./membres.php">Membres</a></li>
-				<li><a href="./contact.php">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+    <?php include "header.php"; ?>
     <div id="contenu-page">
         <div id="vignettes">
             <div class="vignette"><img src="decoration/img/einstein.jpg" alt="Albert Einstein"></div>

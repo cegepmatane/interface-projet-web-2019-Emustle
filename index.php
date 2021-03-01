@@ -31,26 +31,7 @@ $listeArticles = EspaciumDAO::listerArticles();
 </head>
 
 <body onload="compte_a_rebours();">
-	<header>
-        <h1><a href="index.php"></a><span>Espacium : Une vision de l'infiniment grand</span></h1>
-
-		<nav class="topnav">
-			<ul>
-				<li><a href="./index.php" class="active">Accueil</a></li>
-				<li><a href="./articles.php">Nouvelles</a>
-					<ul>
-						<li><a href="./objets-celestes.php">Les objets célestes</a></li>
-						<li><a href="./trou-noir.php">Les trous noirs</a></li>
-						<li><a href="./univers-expansion.php">Un univers en expansion</a></li>
-					</ul>
-				</li>
-				<li><a href="./mission.php">Mission</a></li>
-				<li><a href="./membres.php">Membres</a></li>
-				<li><a href="./contact.php">Contact</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
-			</ul>
-		</nav>
-	</header>
+<?php include "header.php"; ?>
 	<div id=contenu-page>
 		<div id="lancement-dart">
 			<img id="img-lancement-dart" src="./decoration/img/lancement.jpg" alt="Lancement d'une fusée">

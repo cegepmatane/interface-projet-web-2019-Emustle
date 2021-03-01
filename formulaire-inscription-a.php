@@ -22,25 +22,7 @@
     </script>
 </head>
 <body>
-	<header>
-        <h1><a href="index.php"></a><span>Espacium : Une vision de l'infiniment grand</span></h1>
-
-		<nav>
-			<ul>
-				<li><a href="./index.php">Accueil</a></li>
-				<li><a href="./articles.php">Nouvelles</a>
-					<ul>
-						<li><a href="./objets-celestes.php">Les objets célestes</a></li>
-						<li><a href="./trou-noir.php">Les trous noirs</a></li>
-						<li><a href="./univers-expansion.php">Un univers en expansion</a></li>
-					</ul>
-				</li>
-				<li><a href="./mission.php">Mission</a></li>
-				<li><a href="./membres.php">Membres</a></li>
-				<li><a href="./contact.php">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+    <?php include "header.php"; ?>
     <div id="contenu-page">
         <ul>
             <li class="fil-ariane"><a href="./index.php">Accueil</a></li>
