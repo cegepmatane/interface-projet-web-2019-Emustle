@@ -4,9 +4,8 @@
 	<title>Espacium - Mission</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./css/mission.css">
-	<script src="js/footer.js"></script>
 </head>
-<body onload="remplacerLienParImage()">
+<body>
 	<header>
         <h1><a href="index.php"></a><span>Espacium : Une vision de l'infiniment grand</span></h1>
 
@@ -48,23 +47,4 @@
             </div>
         </div>
     </div>
-	<footer>
-		<div>
-			<div id="mentions-legales">
-				<p>Mentions légales </p>
-				<p>Développeur : Hy-Vong G.D.R.</p>
-			</div>
-			<ul id="liens-sociaux">
-				<li>Pour nous suivre sur les réseaux :</li>
-				<li>
-					<a id="lien-facebook" href="https://www.facebook.com"></a>
-					<a id="lien-twitter" href="https://www.twitter.com"></a>
-					<a id="lien-instagram" href="https://www.instagram.com"></a>
-                    <a id="lien-quora" href="https://www.quora.com"></a>
-					<a id="lien-reddit" href="https://www.reddit.com"></a>
-				</li>
-			</ul>
-		</div>
-	</footer>
-</body>
-</html>
+	<?php include "footer.php"; ?>
