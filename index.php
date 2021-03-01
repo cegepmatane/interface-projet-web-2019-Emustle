@@ -33,21 +33,21 @@ $listeArticles = EspaciumDAO::listerArticles();
 
 <body onload="remplacerLienParImage(); compte_a_rebours();">
 	<header>
-        <h1><a href="index.html"></a><span>Espacium : Une vision de l'infiniment grand</span></h1>
+        <h1><a href="index.php"></a><span>Espacium : Une vision de l'infiniment grand</span></h1>
 
 		<nav class="topnav">
 			<ul>
-				<li><a href="./index.html" class="active">Accueil</a></li>
-				<li><a href="./articles.html">Nouvelles</a>
+				<li><a href="./index.php" class="active">Accueil</a></li>
+				<li><a href="./articles.php">Nouvelles</a>
 					<ul>
-						<li><a href="./objets-celestes.html">Les objets célestes</a></li>
-						<li><a href="./trou-noir.html">Les trous noirs</a></li>
-						<li><a href="./univers-expansion.html">Un univers en expansion</a></li>
+						<li><a href="./objets-celestes.php">Les objets célestes</a></li>
+						<li><a href="./trou-noir.php">Les trous noirs</a></li>
+						<li><a href="./univers-expansion.php">Un univers en expansion</a></li>
 					</ul>
 				</li>
-				<li><a href="./mission.html">Mission</a></li>
-				<li><a href="./membres.html">Membres</a></li>
-				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./mission.php">Mission</a></li>
+				<li><a href="./membres.php">Membres</a></li>
+				<li><a href="./contact.php">Contact</a></li>
                 <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
 			</ul>
 		</nav>
@@ -79,7 +79,7 @@ $listeArticles = EspaciumDAO::listerArticles();
                 <div class="panneau" id="invite-inscription">
                     <p>Vous souhaitez devenir membre ?</p>
                     <div class="invite-action">
-                        <a href="formulaire-inscription-a.html">Inscrivez-vous</a>
+                        <a href="formulaire-inscription-a.php">Inscrivez-vous</a>
                     </div>
                 </div>
                 <div class="panneau" id="liste-articles">
@@ -101,30 +101,30 @@ $listeArticles = EspaciumDAO::listerArticles();
                     }
                     ?>
 
-                    <h4><a href="articles.html" id="lien-articles">Tous les articles</a></h4>
+                    <h4><a href="articles.php" id="lien-articles">Tous les articles</a></h4>
                 </div>
                 <div class="panneau" id="invite-contact">
                     <p>Vous avez une question ? Vous désirez apporter votre soutien au groupe ?</p>
                      <div class="invite-action">
-                        <a href="contact.html">Contactez-nous</a>
+                        <a href="contact.php">Contactez-nous</a>
                     </div>
                 </div>
                 <div class="panneau">
                     <p>Personnalités du Cosmos</p>
                      <div class="invite-action">
-                        <a href="vignette-vedette.html">Voir plus</a>
+                        <a href="vignette-vedette.php">Voir plus</a>
                     </div>
                 </div>
                 <div class="panneau">
                     <p>Avant de poser une question, consultez la F.A.Q</p>
                      <div class="invite-action">
-                        <a href="questions-reponses.html">Voir FAQ</a>
+                        <a href="questions-reponses.php">Voir FAQ</a>
                     </div>
                 </div>    
                 <div class="panneau">
                     <p>Lien Galerie-mobile</p>
                      <div class="invite-action">
-                        <a href="galerie-mobile.html">Voir les images</a>
+                        <a href="galerie-mobile.php">Voir les images</a>
                     </div>
                 </div>
             </section>

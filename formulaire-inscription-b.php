@@ -9,32 +9,32 @@
 </head>
 <body onload="remplacerLienParImage(); initialiser('aide-nom', 'label-nom');">
 	<header>
-        <h1><a href="index.html"></a><span>Espacium : Une vision de l'infiniment grand</span></h1>
+        <h1><a href="index.php"></a><span>Espacium : Une vision de l'infiniment grand</span></h1>
 
 		<nav>
 			<ul>
-				<li><a href="./index.html">Accueil</a></li>
-				<li><a href="./articles.html">Nouvelles</a>
+				<li><a href="./index.php">Accueil</a></li>
+				<li><a href="./articles.php">Nouvelles</a>
 					<ul>
-						<li><a href="./objets-celestes.html">Les objets célestes</a></li>
-						<li><a href="./trou-noir.html">Les trous noirs</a></li>
-						<li><a href="./univers-expansion.html">Un univers en expansion</a></li>
+						<li><a href="./objets-celestes.php">Les objets célestes</a></li>
+						<li><a href="./trou-noir.php">Les trous noirs</a></li>
+						<li><a href="./univers-expansion.php">Un univers en expansion</a></li>
 					</ul>
 				</li>
-				<li><a href="./mission.html">Mission</a></li>
-				<li><a href="./membres.html">Membres</a></li>
-				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./mission.php">Mission</a></li>
+				<li><a href="./membres.php">Membres</a></li>
+				<li><a href="./contact.php">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
     <div id="contenu-page">
         <ul>
-            <li class="fil-ariane"><a href="./index.html">Accueil</a></li>
-            <li class="fil-ariane"><a href="./membres.html">Membres</a></li>
-            <li class="fil-ariane"><a href="./formulaire-inscription-a.html">Choix identifiants</a></li>
-            <li class="fil-ariane"><a href="./formulaire-inscription-b.html">Renseignements personnels/Adresse</a></li>
+            <li class="fil-ariane"><a href="./index.php">Accueil</a></li>
+            <li class="fil-ariane"><a href="./membres.php">Membres</a></li>
+            <li class="fil-ariane"><a href="./formulaire-inscription-a.php">Choix identifiants</a></li>
+            <li class="fil-ariane"><a href="./formulaire-inscription-b.php">Renseignements personnels/Adresse</a></li>
         </ul>
-        <form name="formulaire-inscription" method="post" action="formulaire-inscription-c.html">
+        <form name="formulaire-inscription" method="post" action="formulaire-inscription-c.php">
             <fieldset>
                 <legend>Inscription - PARTIE B</legend>
                 <ul>
