@@ -1,3 +1,50 @@
+<?php
+
+require "configuration.php";
+require CHEMIN_BDD."MembreDAO.php";
+
+
+if(isset($_SESSION['membre']))
+{
+	header("location: profil.php");
+}
+
+if(isset($_POST["action-connexion"]))
+{
+	//Filtrage des inputs
+	$filtresConnexion = array();
+	$filtresConnexion['email'] = FILTER_SANITIZE_EMAIL;
+	$filtresConnexion['mdp'] = FILTER_SANITIZE_STRING;
+	
+	$connexion = filter_input_array(INPUT_POST, $filtresConnexion);
+
+	if(!empty($connexion['email']) && !empty($connexion['mdp']))
+	{
+		$membre = MembreDAO::listerMembreParCourriel($connexion);
+
+		if(isset($membre['mot_de_passe']) && password_verify($connexion['mdp'], $membre['mot_de_passe']))
+		{
+			$_SESSION['membre']['id'] = $membre['id'];
+			$_SESSION['membre']['nom'] = $membre['nom'];
+			$_SESSION['membre']['prenom'] = $membre['prenom'];
+			$_SESSION['membre']['pseudonyme'] = $membre['pseudonyme'];
+			$_SESSION['membre']['courriel'] = $membre['courriel'];
+
+			header('location: profil.php');
+		}
+		else
+		{
+			$erreur = "Le mot de passe ou l'adresse e-mail est invalide";
+		}
+	}
+	else
+	{
+		$erreur = "Veuillez renseigner tous les champs";
+	}
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -39,7 +86,7 @@
             <li class="fil-ariane"><a href="./index.php">Accueil</a></li>
             <li class="fil-ariane"><a href="./membres.php">Membres</a></li>
         </ul>
-        <form name="formulaire-connexion" method="post">
+        <form name="formulaire-connexion" method="post" action="membres.php">
             <fieldset>
             <ul>
                 <li>
@@ -51,9 +98,14 @@
                     <input type="password" name="mdp" id="mdp">             
                 </li>
                 <li>
-                    <input id="bouton" type="submit" value="Envoyer">
+                    <input name="action-connexion" type="submit" value="Se connecter">
                 </li>
             </ul>
+			<?php
+			if($erreur){
+				echo "<h3 style='color: red;'>".$erreur."</h3>";
+			}
+			?>
             </fieldset>
         </form>
         <div id="inscription">
